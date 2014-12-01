@@ -1,16 +1,18 @@
 clamav
 
-This is the clamav module.
+This is the clamav module, to manage the installation and configuration of clamav.
 
 License
 -------
 
+GPL v2.0
 
 Contact
 -------
+
+danielwhatmuff@gmail.com
 
 
 Support
 -------
 
-Please log tickets and issues at our [Projects site](http://projects.example.com)
