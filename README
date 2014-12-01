@@ -1,6 +1,6 @@
-clamav
+logindefs
 
-This is the clamav puppet module 
+This is the logindefs module.
 
 License
 -------
