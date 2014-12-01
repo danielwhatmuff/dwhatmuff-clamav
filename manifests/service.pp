@@ -17,7 +17,7 @@
 #
 # === Copyright
 #
-# Copyright 2014 Daniel Whatmuff, UK HomeOffice
+# Copyright 2014 Daniel Whatmuff 
 #
 class clamav::service($services = false) {
 
