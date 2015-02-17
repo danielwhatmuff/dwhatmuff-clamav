@@ -5,5 +5,5 @@
 <%- if scope.lookupvar('clamav::clamd_config')
   Hash[scope.lookupvar('clamav::clamd_config').sort].each do |cl_key, cl_val|
     Array(cl_val).each do |val| -%>
-<%= cl_key %>=<%= val %>
+<%= cl_key %> <%= val %>
 <%- end end end -%>
