@@ -1,9 +1,10 @@
 clamav
+===================
 
 This is the clamav module, to manage the installation and configuration of clamav.
 
 Usage
-------
+===================
 
 This module requires hiera hashes, see below for examples.
 
@@ -44,16 +45,11 @@ clamav::serviceconfiguration:
   (continued...)
 
 License
--------
+===================
 
 GPL v2.0
 
 Contact
--------
+===================
 
 danielwhatmuff@gmail.com
-
-
-Support
--------
-
