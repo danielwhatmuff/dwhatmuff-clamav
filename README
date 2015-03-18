@@ -2,6 +2,47 @@ clamav
 
 This is the clamav module, to manage the installation and configuration of clamav.
 
+Usage
+------
+
+This module requires hiera hashes, see below for examples.
+
+clamav::cronsetup:
+  clamav:
+    command: '/usr/bin/clamscan / --recursive --bell'
+    user: 'root'
+    hour: '*/12'
+    minute: '0'
+
+# This is for the package name and status
+
+clamav::packages:
+  clamav:
+    ensure: 'present'
+
+# This is for the service name and status
+
+clamav::services:
+  clamav-freshclam:
+    ensure: 'running'
+    enable: 'true'
+
+# This is for the key values to be configured in the clamd config file
+
+clamav::clamdconfiguration:
+  LocalSocket: '/var/run/clamav/clamd.ctl'
+  FixStaleSocket: 'true'
+  LocalSocketGroup: 'clamav'
+  (continued...)
+
+# This is for the key values to be configured in the service config file
+
+clamav::serviceconfiguration:
+  DatabaseOwner: 'clamav'
+  UpdateLogFile: '/var/log/clamav/freshclam.log'
+  LogVerbose: 'false'
+  (continued...)
+
 License
 -------
 
